@@ -185,7 +185,7 @@ def main():
 
 
 if __name__ == '__main__':
-	start = time.clock()
+	start = time.perf_counter()
 	main()
-	end = time.clock()
+	end = time.perf_counter()
 	print('finish all in %s' % str(end - start))
